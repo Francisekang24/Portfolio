@@ -1,0 +1,230 @@
+button:hover,
+.profile-links:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(58, 58, 58 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+button:active,
+.profile-links:active {
+    box-shadow: inset 0px 0.1em 0.6em #19191a;
+    transform: translateY(0em);
+}
+
+.container {
+    border: 2px solid rgb(33, 83, 145);
+    display: flex;
+    height: 100vh; 
+}
+.scrollable {
+    overflow: auto;
+    gap: 0.5rem;
+}
+.sidebar {
+    width: 400px; 
+    max-width: 400px;
+    border-right: 1px solid rgb(203, 213, 225);
+    background-color: green;
+}
+.main-content {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* --------------------------SIDEBAR-------------------------- */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-content {
+    max-width: 260px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------------------PROFILE-------------------------- */
+
+.profile {
+    padding: 10px;
+    width: 230px;
+    height: auto;
+    border-radius: 2em;
+    background-color: #191919;
+    box-shadow: 5px 5px 30px rgb(4, 4, 4),
+        -5px -5px 30px rgb(57, 57, 57);
+}
+
+.profile img {
+    display: flex;
+    margin: 35px auto 10px auto;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    overflow: hidden;
+    border-width: 3px;
+    border-color: #d17842;
+}
+
+.profile:hover img {
+    transform: scale(1.2) translateY(-30px);
+}
+
+.profile-name {
+    color: #f0f0f0;
+    font-size: 32px;
+    margin-top: 10px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.profile-title {
+    color: #7a6b6b;
+    font-size: 16px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.profile-socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #191919;
+    border-radius: 3em;
+    width: 90%;
+    padding: 8px;
+    margin-top: 15px;
+    color: white;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0),
+        -3px -3px 15px rgb(58, 58, 58);
+}
+
+/* --------------------------SOCIALS-------------------------- */
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 3em;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+#github:hover {
+    fill: aliceblue;
+}
+
+#linkedin:hover {
+    fill: rgb(100, 149, 192);
+}
+
+#facebook:hover {
+    fill: rgb(20, 39, 146);
+}
+
+/* -----------------------CONTACT_INFO------------------------ */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    border-radius: 1em;
+    padding: 16px;
+    margin-top: 15px;
+    width: 220px;
+    border: 1px solid #f0f0f0;
+    align-items: start;
+}
+
+.contact-info-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+
+    svg {
+        align-self: center;
+        margin-bottom: 5px;
+    }
+}
+
+.contact-info-item {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f0f0f0;
+
+    .label {
+        font-size: 12px;
+        color: #f0f0f0;
+    }
+
+    .value {
+        font-size: 16px;
+        color: #6d6b6b;
+    }
+}
+
+.contact-info-items:hover {
+    border-radius: 10px;
+    background-color:  #3b3a3a;
+    cursor: pointer;
+    transform: (1.05);
+}
+
+/* ---------------------DOWNLOAD RESUME----------------------- */
+
+.download-resume {
+    cursor: pointer;
+    background-color: #191919;
+    border-radius: 3em;
+    width: 90%;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    color: white;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0),
+        -3px -3px 15px rgb(58, 58, 58);
+}
+
+/* ----------------------------------------------------------- */
+
+@media screen and (max-width: 448px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+    }
+
+    .container {
+        height: fit-content;
+    }
+
+    .scrollable {
+        overflow: visible;
+    }
+
+    
+}
