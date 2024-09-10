@@ -9,6 +9,7 @@
 <body>
 
     <div class="container">
+
         <div class="sidebar">
 
             <div class="sidebar-content">
@@ -88,78 +89,271 @@
                 </button>
             </div>
 
-        </div>
-        <div class="scrollable main">
-            <div class="nav">
 
-            </div>
+        </div>
+
+        <div class="scrollable main">
+            <nav class="navbar">
+                <button class="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="navbar-links">
+                    <label title="portfolio" data-target="portfolio" for="portfolio" class="navbar-item">
+                        <input id="portfolio" name="page" type="radio" checked="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="inherit" viewBox="0 0 20 18" height="18"
+                            width="20" class="icon favorite">
+                            <path fill="inherit"
+                                d="M14.44 0C12.63 0 11.01 0.88 10 2.23C9.48413 1.53881 8.81426 0.977391 8.04353 0.590295C7.27281 0.203198 6.42247 0.00108555 5.56 0C2.49 0 0 2.5 0 5.59C0 6.78 0.19 7.88 0.52 8.9C2.1 13.9 6.97 16.89 9.38 17.71C9.72 17.83 10.28 17.83 10.62 17.71C13.03 16.89 17.9 13.9 19.48 8.9C19.81 7.88 20 6.78 20 5.59C20 2.5 17.51 0 14.44 0Z">
+                            </path>
+                        </svg>
+                    </label>
+                    <label title="resume" data-target="resume" for="resume" class="navbar-item">
+                        <input id="resume" name="page" type="radio" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="inherit" viewBox="0 0 18 20" height="20"
+                            width="18" class="icon cart">
+                            <path fill="inherit"
+                                d="M16.8035 6.96427C16.1335 6.22427 15.1235 5.79427 13.7235 5.64427V4.88427C13.7235 3.51427 13.1435 2.19427 12.1235 1.27427C11.6202 0.812823 11.025 0.462927 10.3771 0.247511C9.72909 0.032095 9.04292 -0.0439787 8.3635 0.0242742C5.9735 0.254274 3.9635 2.56427 3.9635 5.06427V5.64427C2.5635 5.79427 1.5535 6.22427 0.883496 6.96427C-0.0865043 8.04427 -0.0565042 9.48427 0.0534958 10.4843L0.753496 16.0543C0.963496 18.0043 1.7535 20.0043 6.0535 20.0043H11.6335C15.9335 20.0043 16.7235 18.0043 16.9335 16.0643L17.6335 10.4743C17.7435 9.48427 17.7635 8.04427 16.8035 6.96427ZM8.5035 1.41427C8.98813 1.36559 9.47758 1.41913 9.94023 1.57143C10.4029 1.72372 10.8284 1.97138 11.1894 2.29841C11.5503 2.62544 11.8387 3.02456 12.0357 3.46998C12.2328 3.91539 12.3343 4.39721 12.3335 4.88427V5.58427H5.3535V5.06427C5.3535 3.28427 6.8235 1.57427 8.5035 1.41427ZM5.2635 11.1543H5.2535C4.7035 11.1543 4.2535 10.7043 4.2535 10.1543C4.2535 9.60427 4.7035 9.15427 5.2535 9.15427C5.8135 9.15427 6.2635 9.60427 6.2635 10.1543C6.2635 10.7043 5.8135 11.1543 5.2635 11.1543ZM12.2635 11.1543H12.2535C11.7035 11.1543 11.2535 10.7043 11.2535 10.1543C11.2535 9.60427 11.7035 9.15427 12.2535 9.15427C12.8135 9.15427 13.2635 9.60427 13.2635 10.1543C13.2635 10.7043 12.8135 11.1543 12.2635 11.1543Z">
+                            </path>
+                        </svg>
+                    </label>
+                    <label title="about" data-target="about" for="about" class="navbar-item">
+                        <input id="about" name="page" type="radio" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" height="20" width="21"
+                            class="icon home">
+                            <path fill="inherit"
+                                d="M18.9999 6.01002L12.4499 0.770018C11.1699 -0.249982 9.16988 -0.259982 7.89988 0.760018L1.34988 6.01002C0.409885 6.76002 -0.160115 8.26002 0.0398848 9.44002L1.29988 16.98C1.58988 18.67 3.15988 20 4.86988 20H15.4699C17.1599 20 18.7599 18.64 19.0499 16.97L20.3099 9.43002C20.4899 8.26002 19.9199 6.76002 18.9999 6.01002ZM10.9199 16C10.9199 16.41 10.5799 16.75 10.1699 16.75C9.75988 16.75 9.41988 16.41 9.41988 16V13C9.41988 12.59 9.75988 12.25 10.1699 12.25C10.5799 12.25 10.9199 12.59 10.9199 13V16Z">
+                            </path>
+                        </svg>
+                    </label>
+                    <label title="contact" data-target="contact" for="contact" class="navbar-item">
+                        <input id="contact" name="page" type="radio" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="inherit" viewBox="0 0 16 20" height="20"
+                            width="16" class="icon history">
+                            <path fill="inherit"
+                                d="M15.0294 12.4902L14.0294 10.8302C13.8194 10.4602 13.6294 9.76016 13.6294 9.35016V6.82016C13.6282 5.70419 13.3111 4.61137 12.7147 3.66813C12.1183 2.72489 11.267 1.96978 10.2594 1.49016C10.0022 1.0335 9.62709 0.654303 9.17324 0.392195C8.71939 0.130087 8.20347 -0.00530784 7.6794 0.000159243C6.5894 0.000159243 5.6094 0.590159 5.0894 1.52016C3.1394 2.49016 1.7894 4.50016 1.7894 6.82016V9.35016C1.7894 9.76016 1.5994 10.4602 1.3894 10.8202L0.379396 12.4902C-0.0206039 13.1602 -0.110604 13.9002 0.139396 14.5802C0.379396 15.2502 0.949396 15.7702 1.6894 16.0202C3.6294 16.6802 5.6694 17.0002 7.7094 17.0002C9.7494 17.0002 11.7894 16.6802 13.7294 16.0302C14.4294 15.8002 14.9694 15.2702 15.2294 14.5802C15.4894 13.8902 15.4194 13.1302 15.0294 12.4902ZM10.5194 18.0102C10.3091 18.5923 9.92467 19.0956 9.41835 19.4516C8.91203 19.8077 8.30837 19.9992 7.6894 20.0002C6.8994 20.0002 6.1194 19.6802 5.5694 19.1102C5.2494 18.8102 5.0094 18.4102 4.8694 18.0002C4.9994 18.0202 5.1294 18.0302 5.2694 18.0502C5.4994 18.0802 5.7394 18.1102 5.9794 18.1302C6.5494 18.1802 7.1294 18.2102 7.7094 18.2102C8.2794 18.2102 8.8494 18.1802 9.4094 18.1302C9.6194 18.1102 9.8294 18.1002 10.0294 18.0702L10.5194 18.0102Z">
+                            </path>
+                        </svg>
+                    </label>
+                </div>
+            </nav>
             <div class="content">
-                <div class="section">
-                    <h2>About Me</h2>
-                    <p>
-                        I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and PHP. I am always looking to learn new technologies and improve my skills.
-                    </p>
-                </div>
-                <div class="section">
-                    <h2>Projects</h2>
-                    <div class="project">
-                        <img src="images/project1.jpg" alt="project1">
-                        <h3>Project 1</h3>
-                        <p>
-                            This is a description of project 1.
-                        </p>
+                <section id="portfolio" class="section" style="display:none;">
+                    <div class="portfolio">
+                        <div class="section-title">Portfolio</div>
+                        <div class="filters">
+                            <select id="softwareFilter">
+                                <option value="all">All Software</option>
+                                <option value="python">Python</option>
+                                <option value="html">HTML</option>
+                                <option value="react">React</option>
+                            </select>
+
+                            <select id="typeFilter">
+                                <option value="all">All Types</option>
+                                <option value="web">Web</option>
+                                <option value="mobile_app">Mobile App</option>
+                                <option value="datascience">Data Science</option>
+                            </select>
+
+                            <select id="dateFilter">
+                                <option value="all">All Dates</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                            </select>
+
+                            <select id="contextFilter">
+                                <option value="all">All Contexts</option>
+                                <option value="school">School</option>
+                                <option value="collab">Collab</option>
+                                <option value="fun">Fun</option>
+                            </select>
+                        </div>
+                        <div class="work-box">
+                            <!-- Each work item has multiple data attributes for filtering -->
+                            <div class="work-item" data-software="python" data-type="web" data-date="2023" data-context="school">
+                                <img src="images/SeniorDesign.png"
+                                    alt="PVAMU">
+                                <div class="work-item-text-box">
+                                    <h1>Panther's Visual</h1>
+                                    <div class="work-item-descr">
+                                        <h2>PVAMU Senior Design Project</h2>
+                                        <p>Mobile App, uses camera and AI to recognize buildings a landscapes around the campus</p>
+                                        <div class="work-item-links">
+                                            <div>
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"></path></svg>
+                                              <a class="link" href="#">Preview</a>
+                                            </div>
+                                            <div>
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                                              <a class="link" href="#">Code</a>
+                                            </div>
+                                        </div>
+                                        <div class="work-item-tags">
+                                            <span>
+                                              Swift
+                                            </span>
+                                      
+                                            <span>
+                                              Firebase
+                                            </span>
+                                            <span>
+                                                Xcode
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-item" data-software="html" data-type="mobile_app" data-date="2024" data-context="fun">
+                                
+                            </div>
+                            <div class="work-item" data-software="react" data-type="datascience" data-date="2023" data-context="collab">
+
+                            </div>
+                            <div class="work-item" data-software="python" data-type="web" data-date="2022" data-context="collab">
+
+                            </div>
+                            <div class="work-item" data-software="html" data-type="web" data-date="2024" data-context="school">
+
+                            </div>
+                            <div class="work-item" data-software="react" data-type="mobile_app" data-date="2023" data-context="fun">
+
+                            </div>
+                            <div class="work-item" data-software="python" data-type="datascience" data-date="2022" data-context="collab">
+
+                            </div>
+                            <div class="work-item" data-software="html" data-type="datascience" data-date="2024" data-context="school">
+
+                            </div>
+                            <div class="work-item" data-software="react" data-type="web" data-date="2023" data-context="fun">
+
+                            </div>
+                            <div class="work-item" data-software="python" data-type="mobile_app" data-date="2022" data-context="collab">
+
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="project">
-                        <img src="images/project2.jpg" alt="project2">
-                        <h3>Project 2</h3>
-                        <p>
-                            This is a description of project 2.
-                        </p>
+                </section>
+                <section id="resume" class="section" style="display:none;">
+                    <div class="resume">
+                        <div class="resume-block">
+                            <div class="section-title">Education</div>
+                            <div class="resume-item">
+                                <img src="https://th.bing.com/th/id/OIP.B7ol9ZEE4KL8ROWyyScWwAAAAA?rs=1&pid=ImgDetMain"
+                                    alt="PVAMU">
+                                <div class="resume-item-text-box">
+                                    <h1>Prairie View A&M University</h1>
+                                    <p>Bachelor of Science in Computer Science</p>
+                                    <div class="resume-item-text-content">
+                                        <p>GPA: 3.9</p>
+                                        <p>Dec 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <img src="https://le-cdn.website-editor.net/3a48360e4ec6461d947773704d1c1c7a/dms3rep/multi/opt/LOGO+PIE+PAGINA+WEB-03-480w.jpg"
+                                    alt="ITNHGE">
+                                <div class="resume-item-text-box">
+                                    <h1>Instituto Tecnológico de Hidrocarburos</h1>
+                                    <p>Awared full scholarship to study abroad in the United States</p>
+                                    <div class="resume-item-text-content">
+                                        <p>ITNHGE</p>
+                                        <p>From 2019 - present</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <img src="https://www.facebook.com/images/pages/finch/cover_placeholder-2x.png"
+                                    alt="Politecnico">
+                                <div class="resume-item-text-box">
+                                    <h1>Politecnico Modesto G.E</h1>
+                                    <p>Intermediate level electricity, Vocational training</p>
+                                    <div class="resume-item-text-content">
+                                        <p>GPA: 3.5</p>
+                                        <p>JUN 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-block">
+                            <div class="section-title">Experience</div>
+                            <div class="resume-item">
+                                <img src="https://facultyaffairs.tamu.edu/_files/images/_content-images/tamus-logo-maroon.png"
+                                    alt="TAMUS">
+                                <div class="resume-item-text-box">
+                                    <h1>TAMUS (Texas A&M University System)</h1>
+                                    <p>Student Research Assistant | NCIT</p>
+                                    <div class="resume-item-text-content">
+                                        <p>Prairie View, Texas</p>
+                                        <p>Feb 2024 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <img src="https://th.bing.com/th/id/R.0d4a9868bc1c115958464e1699eb8cf9?rik=tY1GmhSpK122eQ&pid=ImgRaw&r=0"
+                                    alt="Solera">
+                                <div class="resume-item-text-box">
+                                    <h1>Solera Corp</h1>
+                                    <p>QA Engineering Intern</p>
+                                    <div class="resume-item-text-content">
+                                        <p>Dallas, Texas</p>
+                                        <p>June 2023 - Aug 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <img src="https://facultyaffairs.tamu.edu/_files/images/_content-images/tamus-logo-maroon.png"
+                                    alt="TAMUS">
+                                <div class="resume-item-text-box">
+                                    <h1>TAMUS (Texas A&M University System)</h1>
+                                    <p>Student Hourly Assistant | Computer Science | Research</p>
+                                    <div class="resume-item-text-content">
+                                        <p>Prairie View, Texas</p>
+                                        <p>Nov 2021 - Dec 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project">
-                        <img src="images/project3.jpg" alt="project3">
-                        <h3>Project 3</h3>
-                        <p>
-                            This is a description of project 3.
-                        </p>
-                    </div>
-                    <div class="project">
-                        <div class="project">
-                            <img src="images/project3.jpg" alt="project3">
-                            <h3>Project 3</h3>
-                            <p>
-                                This is a description of project 3.
+                </section>
+                <section id="about" class="section">
+                    <div class="about">
+                        <div class="section-title">About me</div>
+                        <div class="about-content">
+                            <p>I am a Computer Science student at Prairie View A&M University.
+                                I am a passionate and dedicated individual with a strong drive to succeed.
+                                I am a quick learner and I am always looking for new challenges to tackle.
+                            </p>
+                            <p>My goal is to become a successful software developer, I am apasionate on
+                                web development and app development. I have worked on several projects
+                                that have helped me improve my skills. some could be seen on my github.
                             </p>
                         </div>
-                        <div class="project">
-                            <img src="images/project3.jpg" alt="project3">
-                            <h3>Project 3</h3>
+                        <div class="section-title">Expectations</div>
+                        <div class="about-content">
+                            <p>I am looking for a job that will allow me to grow and improve my skills.
+                                A job that will allow me to work with a team of experienced and talented
+                                co-workers. A job that values my tenacity and contributions to the team.
+                            </p>
                             <p>
-                                This is a description of project 3.
+                                I don't expect to be perfect, but I do expect to give all my best in every task.
+                                I don't expect to be praised for a job well done, but I do expect to be recognized
+                                for my contributions to the team.
                             </p>
                         </div>
                     </div>
-                        <img src="images/project3.jpg" alt="project3">
-                        <h3>Project 3</h3>
-                        <p>
-                            This is a description of project 3.
-                        </p>
+                </section>
+                <section id="contact" class="section" style="display:none;">
+                    <div class="contact">
+                        <div class="section-title">Contact</div>
+                        
                     </div>
-                </div>
-                <div class="section">
-                    <h2>Contact</h2>
-                    <form action="submit.php" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+                </section>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

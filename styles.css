@@ -207,7 +207,83 @@ button:active,
         -3px -3px 15px rgb(58, 58, 58);
 }
 
-/* ----------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------MAIN CONTENT-------------------------- */
+
+/* --------------------------NAVEGATION BAR------------------------ */
+
+.navbar {
+    margin-top: 15px;
+    position: sticky;
+    width: 100%;
+    min-width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-item {
+    padding: 8px 8px;
+    transition: all 200ms;
+    display: inline-block;
+}
+
+.navbar-item input[type="radio"] {
+    display: none;
+}
+
+.navbar-item>svg {
+    transition: all 200ms;
+    fill: #aeaeae;
+    width: 64px;
+}
+
+.navbar-item:hover:not(:has(input:checked))>svg {
+    fill: #d17842;
+    opacity: 0.6;
+}
+
+.navbar-item::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    background: #d17842;
+    transition: all 200ms;
+}
+
+.navbar-item>svg {
+    transition: 300ms;
+    fill: #52555a;
+    margin-top: 0;
+}
+
+.navbar-item:has(input:checked)>svg {
+    fill: #d17842;
+    scale: 1.2;
+    margin-top: -5px;
+}
+
+.navbar-item:has(input:checked)::before {
+    width: 100%;
+    left: 0;
+    top: 25px;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* -------------------------------------------MEDIA QUERIES-------------------------------------------------------------- */
 
 @media screen and (max-width: 448px) {
     .container {
