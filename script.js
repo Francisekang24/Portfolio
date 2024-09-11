@@ -26,5 +26,29 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', () => toggleSection(item.getAttribute('data-target')));
     });
 
-    toggleSection('portfolio');
+    toggleSection('contact');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filters = document.querySelectorAll('.filters select');
+    const workItems = document.querySelectorAll('.work-item');
+
+    filters.forEach(filter => filter.addEventListener('change', () => {
+        const selected = {
+            software: document.getElementById('softwareFilter').value,
+            type: document.getElementById('typeFilter').value,
+            date: document.getElementById('dateFilter').value,
+            context: document.getElementById('contextFilter').value
+        };
+
+        workItems.forEach(item => {
+            const isVisible = (selected.software === 'all' || item.getAttribute('data-software') === selected.software) &&
+                              (selected.type === 'all' || item.getAttribute('data-type') === selected.type) &&
+                              (selected.date === 'all' || item.getAttribute('data-date') === selected.date) &&
+                              (selected.context === 'all' || item.getAttribute('data-context') === selected.context);
+            item.style.display = isVisible ? 'block' : 'none';
+        });
+    }));
+});
+
+

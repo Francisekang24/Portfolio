@@ -17,9 +17,10 @@ button:active,
 }
 
 .container {
-    border: 2px solid rgb(33, 83, 145);
     display: flex;
     height: 100vh; 
+    background-color: rgb(41, 40, 40);
+
 }
 .scrollable {
     width: 100%;
@@ -28,8 +29,6 @@ button:active,
 }
 .sidebar {
     max-width: 260px; 
-    border-right: 1px solid rgb(203, 213, 225);
-    background-color: green;
 }
 .main-content {
     flex: 1; /* Takes up remaining space */
@@ -64,8 +63,8 @@ button:active,
     height: auto;
     border-radius: 2em;
     background-color: #191919;
-    box-shadow: 5px 5px 30px rgb(4, 4, 4),
-        -5px -5px 30px rgb(57, 57, 57);
+    box-shadow: 5px 5px 10px rgb(4, 4, 4),
+        -5px -5px 10px rgb(57, 57, 57);
 }
 
 .profile img {
@@ -299,6 +298,15 @@ button:active,
     display: none;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
 /* --------------------------PORTFOLIO-------------------------- */
 
 .portfolio {
@@ -306,11 +314,11 @@ button:active,
     flex-direction: column;
     width: 98%;
     height: auto;
-    border-radius: 1.5em;
+    border-radius: 10px;
     padding: 10px;
-    background-color: #191919;
-    box-shadow: 5px 5px 30px rgb(4, 4, 4),
-        -5px -5px 30px rgb(57, 57, 57);
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
 }
 
 /* --------------------FILTERS----------------- */
@@ -464,24 +472,25 @@ button:active,
 .resume {
     display: flex;
     flex-direction: row;
+    gap: 20px;
     flex-wrap: wrap;
     width: 98%;
     height: auto;
-    border-radius: 1.5em;
+    border-radius: 10px;
     padding: 10px;
-    background-color: #191919;
-    box-shadow: 5px 5px 30px rgb(4, 4, 4),
-        -5px -5px 30px rgb(57, 57, 57);
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
 }
 
 .resume-block {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 45%;
     height: auto;
-    border-radius: 1.5em;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
     background-color: #191919;
 }
 
@@ -526,46 +535,16 @@ button:active,
     justify-content: space-between;
 }
 
-.resume-item span {
-    font-size: 10px;
-}
-
-.resume-item h1 {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.resume-item p {
-    margin-top: 8px;
-    font-size: 12px;
-    font-weight: lighter;
-}
-
-@media screen and (max-width: 400px) {
-    .resume {
-        flex-direction: column;
-    }
-
-    .resume-item {
-        flex-direction: column;
-    }
-    .resume-item-text-box p {
-        display: none;
-
-    }
-    
-}
 
 /* -------------------------------ABOUT------------------------------- */
 
 .about {
     width: 98%;
     height: auto;
-    border-radius: 1.5em;
+    border-radius: 10px;
     padding: 10px;
-    background-color: #191919;
-    box-shadow: 5px 5px 30px rgb(4, 4, 4),
-        -5px -5px 30px rgb(57, 57, 57);
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
 }
 
 
@@ -582,15 +561,87 @@ button:active,
     font-size: 15px;
 }
 
+/* -------------------------------CONTACT------------------------------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
+}
+
+.contact-item {
+    align-self: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+  
+  .contact-item .form-title {
+    color: #d17842;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-item input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .contact-item textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: vertical;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .contact-item button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #d17842;
+    color: #fff;
+    cursor: pointer;
+  }
+      
+
 /* -------------------------------------------MEDIA QUERIES-------------------------------------------------------------- */
 
-@media screen and (max-width: 448px) {
+@media screen and (orientation: portrait) {
     .container {
         flex-direction: column;
     }
     .sidebar {
         width: inherit;
         border-right: none;
+        align-self: center;
     }
 
     .sidebar-content {
@@ -614,14 +665,14 @@ button:active,
 
     .navbar-toggle {
         display: block;
-        background: none;
-        border: none;
+        background: rgba(56, 52, 52, 0.61);
+        border-radius: 10px;
         color: rgb(29, 155, 13);
         font-size: 1.5em;
         cursor: pointer;
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        position: relative;
+        z-index: 999;
+        margin: 10px;
     }
 
     .navbar-links {
@@ -631,6 +682,10 @@ button:active,
 
     .navbar-links.active {
         display: flex;
+    }
+
+    .resume {
+        flex-direction: column;
     }
 
     
