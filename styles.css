@@ -89,7 +89,7 @@ button:active,
 }
 
 .profile-name {
-    color: #f0f0f0;
+    color: #d17842;
     font-size: 24px;
     margin-top: 10px;
     font-style: oblique;
@@ -182,7 +182,7 @@ button:active,
 
     .label {
         font-size: 12px;
-        color: #f0f0f0;
+        color: #d17842;
     }
 
     .value {
@@ -208,7 +208,7 @@ button:active,
     padding: 8px;
     margin-top: 15px;
     margin-bottom: 12px;
-    color: white;
+    color: #7a6b6b;
     box-shadow: 3px 3px 15px rgb(0, 0, 0),
         -3px -3px 15px rgb(58, 58, 58);
 }
@@ -559,7 +559,7 @@ button:active,
   }
   .card .content .details .data h3 {
     font-size: 1em;
-    color: #555;
+    color: #d17842;
     line-height: 1.2em;
     font-weight: 600;
   }
@@ -576,20 +576,14 @@ button:active,
   .card .content .details .actionBtn button {
     padding: 10px 30px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #d17842;
     outline: none;
     font-size: 1em;
     font-weight: 500;
-    background: #c471ed;
-    color: #fff;
+    background: #fff;
+    color: #7e7b7b;
     cursor: pointer;
   }
-  .card .content .details .actionBtn button:nth-child(1) {
-    border: 1px solid #999;
-    color: #999;
-    background: #fff;
-  }
-
 
 /* -------------------------------ABOUT------------------------------- */
 
@@ -637,10 +631,11 @@ button:active,
     flex-direction: column;
     gap: 10px;
     width: 300px;
-    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    background-color: #191919;
+    box-shadow: 5px 5px 10px rgb(4, 4, 4),
+        -5px -5px 10px rgb(57, 57, 57);
 }
   
   .contact-item .form-title {
@@ -671,6 +666,10 @@ button:active,
     outline: 0;
     padding: 8px 14px;
     border: 1px solid rgb(219, 213, 213);
+  }
+
+  .contact-item input::placeholder, .contact-item textarea::placeholder {
+    color: #7a6b6b;
   }
   
   .contact-item button {
