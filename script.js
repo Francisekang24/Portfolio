@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', () => toggleSection(item.getAttribute('data-target')));
     });
 
-    toggleSection('contact');
+    toggleSection('portfolio');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
