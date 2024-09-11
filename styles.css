@@ -17,21 +17,27 @@ button:active,
 }
 
 .container {
+    margin: 2% 5%;
+    border-radius: 20px;
     display: flex;
-    height: 100vh; 
+    height: 100vh;
     background-color: rgb(41, 40, 40);
 
 }
+
 .scrollable {
     width: 100%;
     overflow: auto;
     gap: 0.5rem;
 }
+
 .sidebar {
-    max-width: 260px; 
+    max-width: 260px;
 }
+
 .main-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
+    /* Takes up remaining space */
 }
 
 /* --------------------------SIDEBAR-------------------------- */
@@ -129,7 +135,7 @@ button:active,
     color: #333;
     border-radius: 3em;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    background: white;
+    background: #19191a;
     margin: 5px;
     transition: 0.3s;
     justify-content: center;
@@ -193,7 +199,7 @@ button:active,
 
 .contact-info-items:hover {
     border-radius: 10px;
-    background-color:  #3b3a3a;
+    background-color: #3b3a3a;
     cursor: pointer;
     transform: (1.05);
 }
@@ -367,8 +373,9 @@ button:active,
     margin-top: 20px;
 
 }
+
 .work-item {
-    width: 200px;
+    max-width: 300px;
     height: 350px;
     margin-top: 12px;
     align-self: center;
@@ -400,8 +407,8 @@ button:active,
 .work-item h1 {
     font-weight: 900;
     font-size: 16px;
-    text-align: center;
-    margin: 4px 0;
+    text-align: start;
+    margin: 4px 0 0 20px;
 }
 
 .work-item h2 {
@@ -410,7 +417,7 @@ button:active,
     font-weight: 700;
 }
 
-.work-item-descr{
+.work-item-descr {
     padding: 0 15px 10px;
 }
 
@@ -432,21 +439,22 @@ button:active,
     fill: #dbcbcb;
     cursor: pointer;
 }
-  
+
 .work-item-links {
     margin: 0 0 7px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10px;
     align-self: flex-end;
 }
-  
+
 .work-item-links .link {
     color: #dfcdcd;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
 }
-  
+
 .work-item-links:hover .link:hover {
     text-decoration: wavy;
     color: #d17842;
@@ -454,16 +462,16 @@ button:active,
 
 .work-item-tags {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 0.25rem;
 }
 
 .work-item-tags span {
-    white-space: nowrap; 
-    border-radius: 9999px; 
+    white-space: nowrap;
+    border-radius: 9999px;
     background-color: #181717;
-    padding: 2px 10px; 
-    font-size: 12px; 
+    padding: 2px 10px;
+    font-size: 12px;
     color: #5a5a5a;
 }
 
@@ -488,15 +496,19 @@ button:active,
     position: relative;
     width: 350px;
     height: 190px;
-    background: #fff;
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
-  }
-  .card:hover {
+    background-color: #191919;
+    box-shadow: 5px 5px 10px rgb(4, 4, 4),
+        -5px -5px 10px rgb(57, 57, 57);
+}
+
+.card:hover {
     height: 450px;
-  }
-  .imgBx {
+}
+
+.imgBx {
     position: absolute;
     left: 50%;
     top: -50px;
@@ -505,23 +517,26 @@ button:active,
     height: 150px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     transition: 0.5s;
-  }
-  .card:hover .imgBx {
+}
+
+.card:hover .imgBx {
     width: 250px;
     height: 250px;
-  }
-  .imgBx img {
+}
+
+.imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .card .content {
+}
+
+.card .content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -529,51 +544,60 @@ button:active,
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-  }
-  .card .content .details {
+}
+
+.card .content .details {
     margin: -20px 0;
     padding: 40px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
     transform: translateY(150px);
-  }
-  .card:hover .content .details {
+}
+
+.card:hover .content .details {
     transform: translateY(0px);
-  }
-  .card .content .details h2 {
+}
+
+.card .content .details h2 {
     font-size: 1.25em;
     font-weight: 600;
     color: #555;
     line-height: 1.2em;
-  }
-  .card .content .details h2 span {
+}
+
+.card .content .details h2 span {
     font-size: 0.75em;
     font-weight: 500;
     opacity: 0.5;
-  }
-  .card .content .details .data {
+}
+
+.card .content .details .data {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-  }
-  .card .content .details .data h3 {
+}
+
+.card .content .details .data h3 {
     font-size: 1em;
     color: #d17842;
     line-height: 1.2em;
     font-weight: 600;
-  }
-  .card .content .details .data h3 span {
+}
+
+.card .content .details .data h3 span {
     font-size: 0.85em;
     font-weight: 400;
     opacity: 0.5;
-  }
-  .card .content .details .actionBtn {
+}
+
+.card .content .details .actionBtn {
     display: flex;
     justify-content: space-between;
-  /*   gap: 20px; */
-  }
-  .card .content .details .actionBtn button {
+    /*   gap: 20px; */
+}
+
+.card .content .details .actionBtn button {
     padding: 10px 30px;
     border-radius: 5px;
     border: 1px solid #d17842;
@@ -583,7 +607,7 @@ button:active,
     background: #fff;
     color: #7e7b7b;
     cursor: pointer;
-  }
+}
 
 /* -------------------------------ABOUT------------------------------- */
 
@@ -637,8 +661,8 @@ button:active,
     box-shadow: 5px 5px 10px rgb(4, 4, 4),
         -5px -5px 10px rgb(57, 57, 57);
 }
-  
-  .contact-item .form-title {
+
+.contact-item .form-title {
     color: #d17842;
     font-size: 30px;
     font-weight: 600;
@@ -647,18 +671,18 @@ button:active,
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .contact-item input {
+}
+
+.contact-item input {
     outline: 0;
     border: 1px solid rgb(219, 213, 213);
     padding: 8px 14px;
     border-radius: 8px;
     width: 100%;
     height: 50px;
-  }
-  
-  .contact-item textarea {
+}
+
+.contact-item textarea {
     border-radius: 8px;
     height: 100px;
     width: 100%;
@@ -666,13 +690,18 @@ button:active,
     outline: 0;
     padding: 8px 14px;
     border: 1px solid rgb(219, 213, 213);
-  }
+}
 
-  .contact-item input::placeholder, .contact-item textarea::placeholder {
+.contact-item input::placeholder,
+.contact-item textarea::placeholder {
     color: #7a6b6b;
-  }
-  
-  .contact-item button {
+}
+
+.contact-item input, .contact-item textarea {
+    background-color: #19191a;
+}
+
+.contact-item button {
     align-self: flex-end;
     padding: 8px;
     outline: 0;
@@ -683,8 +712,8 @@ button:active,
     background-color: #d17842;
     color: #fff;
     cursor: pointer;
-  }
-      
+}
+
 
 /* -------------------------------------------MEDIA QUERIES-------------------------------------------------------------- */
 
@@ -692,14 +721,18 @@ button:active,
     .container {
         flex-direction: column;
     }
+
     .sidebar {
-        width: inherit;
+        max-width: none;
+        flex: 1;
+        width: 95%;
         border-right: none;
         align-self: center;
     }
 
     .sidebar-content {
-        width: 95%;
+        max-width: 800px;
+        width: 98%;
         border-right: none;
     }
 
@@ -738,9 +771,35 @@ button:active,
         display: flex;
     }
 
+    .portfolio {
+        width: 95%;
+    }
+
     .resume {
+        width: 95%;
         flex-direction: column;
     }
 
-    
+    .about {
+        width: 95%;
+    }
+
+    .contact {
+        width: 95%;
+    }
+
+    .card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+
 }
